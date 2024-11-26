@@ -1,0 +1,9 @@
+body {
+    background-color: #e5e0d9;
+    /*6 make guestbook at the bottom and center*/
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end; /* Align to the bottom */
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+}/*1 add bg color*/

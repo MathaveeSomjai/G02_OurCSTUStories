@@ -37,3 +37,15 @@ body {
     padding-top: 6px;
    
 }/*5 style submit button for guestbook*/
+
+/*6 style rating star*/
+.rating {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: flex-end;
+  }
+  
+  .rating input {
+    display: none;
+  }

@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css2?family=Itim&family=Playwrite+DE+Grund:wght@100..400&family=Podkova:wght@400..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Itim&family=Patua+One&family=Playwrite+DE+Grund:wght@100..400&family=Podkova:wght@400..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*navbar*/
+.navbar {
+    position: relative;
+    padding: 30px;
+    background-color:#5b81b4;
+    z-index: 2;
+    -webkit-box-shadow: 2px 5px 11px 5px rgba(0,0,0,0.2); 
+    box-shadow: 2px 5px 11px 5px rgba(0,0,0,0.2);
+}
+
+.navname {
+    font-size: 22pt;
+    padding-left: 15px;
+    font-family: Itim;
+    color: #ffff;
+    z-index: 10;
+}
+
+.navlist {
+    float: right;
+    font-size: 22pt;
+    font-family: Itim;
+    color: #ffff;
+    padding-right: 15px;
+}
+
+.zoomnavlist:hover{
+    font-size: 26pt;
+    color: #000000 ;
+    transition: 1s;
+}
+
+/*main*/
+
+.grid_main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns:250px auto;
+}
+
+.jump_member {
+    position: relative;
+    z-index: 1;
+    background-color: #eae7d8 ;
+}
+
+.main_info {
+    background-color: #eae7d8;
+}
+
+/*member_list*/
+
+.member_list {
+    text-align: center;
+    font-size: 18pt;
+    font-family: Patua One;
+    color: #000000;
+    background-color: #4ea4a7;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 40px;
+    padding: 35px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.flexbox_memberlist {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.jump_member1 {
+    position: relative;
+    bottom: 40px;
+}
+
+.pic_member1 {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+/*pic_jumpmember*/
+
+.name_member1 {
+    position: relative;
+    top: 35px;
+    float: right;
+    padding-right: 50px ;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+}
+
+.jump_member1:hover {
+    transform: scale(1.1);
+    position: relative;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.jump_member2 {
+    position: relative;
+    bottom: 180px;
+}
+
+.pic_member2 {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.name_member2 {
+    position: relative;
+    top: 35px;
+    float: right;
+    padding-right: 50px ;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+}
+
+.jump_member2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.jump_member3 {
+    position: relative;
+    bottom: 320px;
+}
+
+.pic_member3 {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.name_member3 {
+    position: relative;
+    top: 35px;
+    float: right;
+    padding-right: 50px ;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+}
+
+.jump_member3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.jump_member4 {
+    position: relative;
+    bottom: 460px;
+}
+
+.pic_member4 {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.name_member4 {
+    position: relative;
+    top: 35px;
+    float: right;
+    padding-right: 50px ;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+}
+
+.jump_member4:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.jump_member5 {
+    position: relative;
+    bottom: 600px;
+}
+
+.pic_member5 {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.name_member5 {
+    position: relative;
+    top: 35px;
+    float: right;
+    padding-right: 50px ;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+}
+
+.jump_member5:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.jump_member6 {
+    position: relative;
+    bottom: 740px;
+}
+
+.pic_member6 {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.name_member6 {
+    position: relative;
+    top: 35px;
+    float: right;
+    padding-right: 50px ;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+}
+
+.jump_member6:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.jump_member7 {
+    position: relative;
+    bottom: 880px;
+}
+
+.pic_member7 {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.name_member7 {
+    position: relative;
+    top: 35px;
+    float: right;
+    padding-right: 50px ;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+}
+
+.jump_member7:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.jump_member8 {
+    position: relative;
+    bottom: 1020px;
+}
+
+.pic_member8 {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.name_member8 {
+    position: relative;
+    top: 35px;
+    float: right;
+    padding-right: 50px ;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+}
+
+.jump_member8:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 10;
+}

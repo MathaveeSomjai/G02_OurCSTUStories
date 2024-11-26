@@ -49,3 +49,18 @@ body {
   .rating input {
     display: none;
   }
+
+   /* 7 when cursor point at star it change to yellow*/
+   .rating label {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label { 
+    color: yellow;
+  }
+  
+  .rating input:checked ~ label {
+    color: yellow;
+  }

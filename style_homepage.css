@@ -7,3 +7,15 @@ body {
     height: 100vh; /* Ensure the body takes up the full viewport height */
     margin: 0;
 }/*1 add bg color*/
+
+.container {
+    width: 350px;
+    padding-top: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: #dea7aa;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}/*2 style container for guestbook*/

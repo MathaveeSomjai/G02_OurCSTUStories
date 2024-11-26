@@ -19,3 +19,21 @@ body {
     margin: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }/*2 style container for guestbook*/
+
+.form-name input {
+    border-radius: 7px;
+    border-style: none;
+    height: 1rem;
+}/*3 style input text for guestbook*/
+
+.form-comment input {
+    border-radius: 7px;
+    border-style: none;
+    height: 6rem;
+    width: 350px;
+}/*4 style input comment for guestbook*/
+
+.btn {
+    padding-top: 6px;
+   
+}/*5 style submit button for guestbook*/

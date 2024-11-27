@@ -184,6 +184,7 @@ button {
 
 .guestbook .container {
 
+  height: 510px;
   width: 600px;
   padding-top: 1px;
   padding-left: 1rem;

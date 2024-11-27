@@ -197,6 +197,13 @@ button {
 
 /*2 style container for guestbook*/
 
+/*style email*/
+.form-email input {
+  border-radius: 7px;
+  border-style: none;
+  height: 1rem;
+}
+
 .form-name input {
   border-radius: 7px;
   border-style: none;

@@ -7,11 +7,37 @@
 body{
     background: #e5e0d9;
 }
+
+/*==============เส้นไทม์ไลน์===============*/
 .timline{
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
 }
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 170%; /*ปรับความยาวเส้น*/
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards; /*เรียกใช้ keyframes moveline*/
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 170%;
+    }
+}
+
+/*===============container===============*/
 .container{
     padding: 10px 50px;
     position: relative;
@@ -19,7 +45,7 @@ body{
     animation: movedown 1s linear forwards; /*เรียกใช้ keyframes movedown*/
     opacity: 0;
 }
-@keyframes movedown {
+@keyframes movedown { 
     0% {
         opacity: 1;
         transform: translateY(-30px);
@@ -30,7 +56,7 @@ body{
         transform: translateY(0px);
     }
 }
-
+/*ดีเลย์การปรากฏของ container*/
 .container:nth-child(1){
     animation-delay: 0s;
 }
@@ -53,18 +79,55 @@ body{
     animation-delay: 6s;
 }
 
+/*สร้างลูกศร*/
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(255, 255, 255);
+    right: 36px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(255, 255, 255);
+    left: 36px;
+}
+
+/*==============กล่องข้อความ===============*/
 .text-box{
     padding: 20px 30px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 6px;
     font-size: 15px;
 }
+.text-box h2 {
+    font-weight: 600;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
 .left-container{
     left: 0;
 }
 .right-container{
     left: 50%;
 }
+
+/*================รูปภาพ=================*/
 img {
     max-width: 50px;
 }
@@ -81,55 +144,8 @@ img {
     left: -20px;
 }
 
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 170%; /*ปรับความยาวเส้น*/
-    background: #fff;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-    animation: moveline 6s linear forwards; /*เรียกใช้ keyframes moveline*/
-}
-@keyframes moveline {
-    0%{
-        height: 0;
-    }
-    100%{
-        height: 170%;
-    }
-}
 
-.text-box h2{
-    font-weight: 600;
-}
-.text-box small{
-    display: inline-block;
-    margin-bottom: 15px;
-}
-.left-container-arrow{
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid rgb(255, 255, 255);
-    right: 36px;
-}
-.right-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid rgb(255, 255, 255);
-    left: 36px;
-}
+
+
 
 

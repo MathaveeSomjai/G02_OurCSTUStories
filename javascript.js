@@ -18,3 +18,8 @@ guestForm.addEventListener('submit', function (e) {
 
     guestList.appendChild(guestCard);//ไม่รีเซ็ต(ถ้ากรอกใหม่จะขึ้นต่ออันเดิม)//
 });
+
+// count star rating//
+//to access the star//
+let stars = document.getElementsByClassName("star");
+let output = document.getElementById("output");

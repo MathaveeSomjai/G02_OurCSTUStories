@@ -37,3 +37,12 @@ function gfg(n) {
     }
     output.innerText = "Rating is: " + n + "/5";
 }
+
+// To remove the pre-applied styling//
+function remove() {
+    let i = 0;
+    while (i < 5) {
+        stars[i].className = "star";
+        i++;
+    }
+}

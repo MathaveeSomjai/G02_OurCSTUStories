@@ -6,38 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="style_homepage.css">
+    <!-- ===================Link to Icon source=================== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <h2>Add Your Comment</h2><!--1 add h2 in guestbook-->
-        <form id="guestform">
-            <div class="form-name">  <!--1 add a name in guestbook-->
-                <label for="name">Name:<br></label>
-                <input type="text" id="name" name="name" required>
+    <section class="member padd-150">
+        <div class="container">
+            <h1>Member</h1>
+            <div class="member-cards">
+                <!-- Card start -->
+                <div class="card">
+                    <div class="card-label">Journey(Dev)</div>
+                    <div class="avatar"></div>
+                    <div class="card-details">
+                        <p>เมธาวี สมใจ</p>
+                        <p>StudentId: 6709616830</p>
+                        <p>Years: Freshmen(1)</p>
+                        <div class="contact">
+                            <ul class="contact-items">
+                                <!-- item start -->
+                                <li class="item">
+                                    <a href="https://github.com/MathaveeSomjai" target="_blank">
+                                        <i class="ri-github-fill"></i>
+                                    </a>
+                                </li>
+                                <!-- item End -->
+                                <!-- item start -->
+                                <li class="item">
+                                    <a href="https://www.instagram.com/yccm_mp/" target="_blank">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                </li>
+                                <!-- item End -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card End -->
+                <!-- Card start -->
+                <div class="card">
+                    <div class="card-label">Homepage(Dev) / Design</div>
+                    <div class="avatar"></div>
+                    <div class="card-details">
+                        <p>ธัชกฤช สตารัตน์</p>
+                        <p>StudentId: 6709681081</p>
+                        <p>Years: Freshmen(1)</p>
+                        <div class="contact">
+                            <ul class="contact-items">
+                                <!-- item start -->
+                                <li class="item">
+                                    <a href="https://github.com/Gikeeeeeee" target="_blank">
+                                        <i class="ri-github-fill"></i>
+                                    </a>
+                                </li>
+                                <!-- item End -->
+                                <!-- item start -->
+                                <li class="item">
+                                    <a href="https://www.instagram.com/gik3ky_/" target="_blank">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                </li>
+                                <!-- item End -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card End -->
+                 <!-- Card start -->
+                <div class="card">
+                    <div class="card-label">Homepage(Dev)</div>
+                    <div class="avatar"></div>
+                    <div class="card-details">
+                        <p>พิชฎา เฉลิมกลิ่น</p>
+                        <p>StudentId: 6709616756</p>
+                        <p>Years: Freshmen(1)</p>
+                        <div class="contact">
+                            <ul class="contact-items">
+                                <!-- item start -->
+                                <li class="item">
+                                    <a href="https://github.com/pichadachaloemklin" target="_blank">
+                                        <i class="ri-github-fill"></i>
+                                    </a>
+                                </li>
+                                <!-- item End -->
+                                <!-- item start -->
+                                <li class="item">
+                                    <a href="https://www.instagram.com/ixe_ciph/" target="_blank">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                </li>
+                                <!-- item End -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card End -->
             </div>
-            <br>
-            <div class="form-comment"> <!--2 add a comment in guestbook-->
-                <label for="comment">Comment:<br></label>
-                <input type="text" id="comment" name="comment" required>
-            </div>
-            <!--star rating for guestbook-->
-            <div class="rating">
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5">&#9733;</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">&#9733;</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">&#9733;</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">&#9733;</label>
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">&#9733;</label>
-            </div>
-            <div class="btn"> <!--3 add a summit button in guestbook-->
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
+        </div>
+    </section>
+    <section class="guestbook">
+        <div class="container">
+            <h2>Add Your Comment</h2><!--1 add h2 in guestbook-->
+            <form id="guestform">
+                <div class="form-name"> <!--1 add a name in guestbook-->
+                    <label for="name">Name:<br></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <br>
+                <div class="form-comment"> <!--2 add a comment in guestbook-->
+                    <label for="comment">Comment:<br></label>
+                    <input type="text" id="comment" name="comment" required>
+                </div>
+                <!--star rating for guestbook-->
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">&#9733;</label>
+                </div>
+                <div class="btn"> <!--3 add a summit button in guestbook-->
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <!--1 Javascript-->
     <script src="javascript.js"></script>
 </body>

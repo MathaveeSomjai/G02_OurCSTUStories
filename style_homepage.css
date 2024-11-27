@@ -1,66 +1,250 @@
-body {
-    background-color: #e5e0d9;
-    /*6 make guestbook at the bottom and center*/
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: flex-end; /* Align to the bottom */
-    height: 100vh; /* Ensure the body takes up the full viewport height */
-    margin: 0;
-}/*1 add bg color*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.container {
-    width: 350px;
-    padding-top: 1px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    background-color: #dea7aa;
-    border-radius: 8px;
-    margin: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}/*2 style container for guestbook*/
+.padd-150 {
+  padding: 0 150px;
+}
+
+body {
+  width: 100%;
+  background-color: #e5e0d9;
+}
+
+li,
+a,
+button {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* =============== Member style start =======================*/
+.member {
+  margin-top: 50px;
+}
+
+.member .container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.member-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+
+/* cards Design */
+.card {
+  flex: 0 1 calc(33.33% - 20px);
+  /* Responsive width */
+  max-width: 300px;
+  /* Maximum width */
+  height: 430px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+/* cards Label */
+.card .card-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 35px;
+  background-color: #819089;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+/* cards Background Image */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('resoures/testimg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  z-index: 1;
+}
+
+.card:hover::before {
+  filter: grayscale(0%);
+}
+
+/* cards Content Details */
+.card-details {
+  background-color: #81908980;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 30px);
+  z-index: 2;
+
+  text-align: left;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-items {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.contact-items .item {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-items a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.5s ease;
+}
+
+.contact-items a:hover {
+  transform: scale(1.15);
+  color: #2c3d48;
+  /* Change to your preferred hover color */
+}
+
+/* card 2*/
+.card:nth-child(2) .card-details {
+  background-color: #dea7aa80;
+}
+
+.card:nth-child(2) .card-label {
+  background-color: #dea7aa;
+}
+.card:nth-child(2) .contact-items a:hover {
+  color: #7e5f60;
+}
+
+.card:nth-child(2)::before {
+  background-image: url('resoures/members_pic/6709681081.png');
+}
+
+/* card 3*/
+.card:nth-child(3) .card-details {
+  background-color: #7e94a280;
+}
+
+.card:nth-child(3) .card-label {
+  background-color: #7e94a2;
+}
+.card:nth-child(3) .contact-items a:hover {
+  color: #2c3d48;
+}
+
+.card:nth-child(3)::before {
+  background-image: url('resoures/members_pic/6709616756.png');
+}
+
+/* =============== Member style start =======================*/
+/* =============== Guestbook style start =======================*/
+.guestbook {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.guestbook .container {
+
+  width: 400px;
+  padding-top: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  background-color: #dea7aa;
+  border-radius: 8px;
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*2 style container for guestbook*/
 
 .form-name input {
-    border-radius: 7px;
-    border-style: none;
-    height: 1rem;
-}/*3 style input text for guestbook*/
+  border-radius: 7px;
+  border-style: none;
+  height: 1rem;
+}
+
+/*3 style input text for guestbook*/
 
 .form-comment input {
-    border-radius: 7px;
-    border-style: none;
-    height: 6rem;
-    width: 350px;
-}/*4 style input comment for guestbook*/
+  border-radius: 7px;
+  border-style: none;
+  height: 6rem;
+  width: 350px;
+}
+
+/*4 style input comment for guestbook*/
 
 .btn {
-    padding-top: 6px;
-   
-}/*5 style submit button for guestbook*/
+  padding-top: 6px;
+}
+
+/*5 style submit button for guestbook*/
 
 /*6 style rating star*/
 .rating {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row-reverse; 
-    justify-content: flex-end;
-  }
-  
-  .rating input {
-    display: none;
-  }
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
 
-   /* 7 when cursor point at star it change to yellow*/
-   .rating label {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .rating label:hover,
-  .rating label:hover ~ label { 
-    color: yellow;
-  }
-  
-  .rating input:checked ~ label {
-    color: yellow;
-  }
+.rating input {
+  display: none;
+}
+
+/* 7 when cursor point at star it change to yellow*/
+.rating label {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+  color: yellow;
+}
+
+.rating input:checked~label {
+  color: yellow;
+}
+
+/* =============== Guestbook style End =======================*/

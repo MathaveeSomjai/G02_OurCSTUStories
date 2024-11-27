@@ -18,13 +18,13 @@ body{
     content: '';
     position: absolute;
     width: 6px;
-    height: 170%; /*ปรับความยาวเส้น*/
+    height: 300%; /*ปรับความยาวเส้น*/
     background: #fff;
-    top: 0;
+    top: 55px;
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 6s linear forwards; /*เรียกใช้ keyframes moveline*/
+    animation: moveline 6s linear forwards; /*เรียกใช้ keyframes moveline /ไว้มาปรับเวลาหลังใส่ข้อมูลครบ*/
 }
 
 @keyframes moveline {
@@ -33,7 +33,7 @@ body{
     }
 
     100% {
-        height: 170%;
+        height: 300%;
     }
 }
 

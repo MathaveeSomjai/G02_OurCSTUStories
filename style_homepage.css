@@ -65,11 +65,12 @@ button {
   width: auto;
   height: 35px;
   background-color: #819089;
-  color: white;
+  color: black;
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 15px;
   z-index: 2;
+  transition: transform 0.5s ease;
 }
 
 /* cards Background Image */
@@ -80,13 +81,17 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('resoures/testimg.png');
+  background-image: url('resoures/members_pic/6709616830.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
   transition: filter 0.5s ease;
   z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card:hover::before {
@@ -106,7 +111,6 @@ button {
   transform: translateX(-50%);
   width: calc(100% - 30px);
   z-index: 2;
-
   text-align: left;
 }
 
@@ -150,7 +154,7 @@ button {
   background-color: #dea7aa;
 }
 .card:nth-child(2) .contact-items a:hover {
-  color: #7e5f60;
+  color: #ed6469;
 }
 
 .card:nth-child(2)::before {
@@ -173,6 +177,66 @@ button {
   background-image: url('resoures/members_pic/6709616756.png');
 }
 
+/* card 4*/
+.card:nth-child(4) .card-details {
+  background-color: #b39eb580;
+}
+
+.card:nth-child(4) .card-label {
+  background-color: #b39eb5;
+}
+.card:nth-child(4) .contact-items a:hover {
+  color: #705473;
+}
+
+.card:nth-child(4)::before {
+  background-image: url('resoures/members_pic/6709616822.png');
+}
+/* card 5*/
+.card:nth-child(5) .card-details {
+  background-color: #c23b2280;
+}
+
+.card:nth-child(5) .card-label {
+  background-color: #c23b22;
+}
+.card:nth-child(5) .contact-items a:hover {
+  color: #682014;
+}
+
+.card:nth-child(5)::before {
+  background-image: url('resoures/members_pic/6709616715.png');
+}
+/* card 6*/
+.card:nth-child(6) .card-details {
+  background-color: #FAEDCB80;
+}
+
+.card:nth-child(6) .card-label {
+  background-color: #FAEDCB;
+}
+.card:nth-child(6) .contact-items a:hover {
+  color: #ebba3d;
+}
+
+.card:nth-child(6)::before {
+  background-image: url('resoures/members_pic/6709616392.png');
+}
+/* card 7*/
+.card:nth-child(7) .card-details {
+  background-color: #f9f6f280;
+}
+
+.card:nth-child(7) .card-label {
+  background-color: #f9f6f2;
+}
+.card:nth-child(7) .contact-items a:hover {
+  color: #d1d1d1;
+}
+
+.card:nth-child(7)::before {
+  background-image: url('resoures/members_pic/6709616632.jpg');
+}
 /* =============== Member style start =======================*/
 /* =============== Guestbook style start =======================*/
 .guestbook {

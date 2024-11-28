@@ -248,7 +248,8 @@ button {
 
 .guestbook .container {
 
-  width: 400px;
+  height: 510px;
+  width: 600px;
   padding-top: 1px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -261,10 +262,19 @@ button {
 
 /*2 style container for guestbook*/
 
+/*style email*/
+.form-email input {
+  border-radius: 7px;
+  border-style: none;
+  height: 1.5rem;
+  width: 300px;
+}
+
 .form-name input {
   border-radius: 7px;
   border-style: none;
-  height: 1rem;
+  height: 1.5rem;
+  width: 300px;
 }
 
 /*3 style input text for guestbook*/
@@ -272,43 +282,44 @@ button {
 .form-comment input {
   border-radius: 7px;
   border-style: none;
-  height: 6rem;
-  width: 350px;
+  height: 7rem;
+  width: 500px;
 }
 
 /*4 style input comment for guestbook*/
 
 .btn {
-  padding-top: 6px;
+  padding-top: 25px;
 }
+
 
 /*5 style submit button for guestbook*/
 
 /*6 style rating star*/
-.rating {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-}
 
-.rating input {
-  display: none;
-}
-
-/* 7 when cursor point at star it change to yellow*/
-.rating label {
-  font-size: 24px;
+.star {
+  font-size: 30px;
   cursor: pointer;
 }
-
-.rating label:hover,
-.rating label:hover~label {
-  color: yellow;
+ 
+.one {
+  color: rgb(255, 0, 0);
 }
-
-.rating input:checked~label {
-  color: yellow;
+ 
+.two {
+  color: rgb(255, 106, 0);
 }
-
+ 
+.three {
+  color: rgb(251, 255, 120);
+}
+ 
+.four {
+  color: rgb(255, 255, 0);
+}
+ 
+.five {
+  color: rgb(24, 159, 14);
+}
+ 
 /* =============== Guestbook style End =======================*/

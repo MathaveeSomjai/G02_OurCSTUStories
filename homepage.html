@@ -223,33 +223,39 @@
     </section>
     <section class="guestbook">
         <div class="container">
-            <h2>Add Your Comment</h2><!--1 add h2 in guestbook-->
+            <br>
+            <h2>Add Your Comment</h2><br><!--1 add h2 in guestbook-->
             <form id="guestform">
+                <div class="form-email"><!--add email in guestbook-->
+                    <label for="email">Email:<br><br></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
                 <div class="form-name"> <!--1 add a name in guestbook-->
-                    <label for="name">Name:<br></label>
+                    <label for="name">Name:<br><br></label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <br>
                 <div class="form-comment"> <!--2 add a comment in guestbook-->
-                    <label for="comment">Comment:<br></label>
+                    <label for="comment">Comment:<br><br></label>
                     <input type="text" id="comment" name="comment" required>
                 </div>
-                <!--star rating for guestbook-->
-                <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5">
-                    <label for="star5">&#9733;</label>
-                    <input type="radio" id="star4" name="rating" value="4">
-                    <label for="star4">&#9733;</label>
-                    <input type="radio" id="star3" name="rating" value="3">
-                    <label for="star3">&#9733;</label>
-                    <input type="radio" id="star2" name="rating" value="2">
-                    <label for="star2">&#9733;</label>
-                    <input type="radio" id="star1" name="rating" value="1">
-                    <label for="star1">&#9733;</label>
-                </div>
+            <!--star star rating for guestbook-->
+            <br>
+            <table>
+            <tr>
+            <td><span onclick="gfg(1)" class="star">★</span>
+                <span onclick="gfg(2)" class="star">★</span>
+                <span onclick="gfg(3)" class="star">★</span>
+                <span onclick="gfg(4)" class="star">★</span>
+                <span onclick="gfg(5)" class="star">★</span></td>
+            <td><h4 id="output">Rating is: 0/5</h4></td>
+            </tr>
+            </table>
                 <div class="btn"> <!--3 add a summit button in guestbook-->
                     <button type="submit">Submit</button>
                 </div>
+                <div id="guestlist"></div>
             </form>
         </div>
     </section>

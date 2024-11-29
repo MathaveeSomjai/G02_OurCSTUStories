@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Muli');
+
 * {
   margin: 0;
   padding: 0;
@@ -323,3 +326,17 @@ button {
 }
  
 /* =============== Guestbook style End =======================*/
+/* =============== Header style start  =======================*/
+header {
+  margin: 0px;
+  padding: 0px;
+  height: 6rem;
+  background-color: #3d4b64;
+}
+#hh{
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+}
+
+/* =============== Header style End  =======================*/

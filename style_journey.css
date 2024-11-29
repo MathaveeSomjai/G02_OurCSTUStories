@@ -40,12 +40,20 @@ body{
 
 /*===============container===============*/
 .container{
-    padding: 10px 50px;
     position: relative;
     width: 50%;
     animation: movedown 1s linear forwards; /*เรียกใช้ keyframes movedown*/
     opacity: 0;
 }
+
+.left-container {
+    padding: 10px 50px 10px 150px;
+}
+
+.right-container {
+    padding: 10px 150px 10px 50px;
+}
+
 @keyframes movedown { 
     0% {
         opacity: 1;
@@ -107,7 +115,7 @@ body{
 
 /*==============กล่องข้อความ===============*/
 .text-box{
-    padding: 20px 30px;
+    padding: 20px 40px;
     background: #ffffff;
     border-radius: 6px;
     font-size: 15px;
@@ -126,6 +134,14 @@ body{
 }
 .right-container{
     left: 50%;
+}
+
+li {
+    list-style-type: circle;
+}
+
+small span {
+    font-weight: bold;
 }
 
 /*================รูปภาพ=================*/

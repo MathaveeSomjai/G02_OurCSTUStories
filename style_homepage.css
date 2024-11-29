@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Muli');
+
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +33,7 @@ button {
   font-size: 48px;
   margin-bottom: 20px;
   color: #333;
+  font-family: "Space Mono", monospace;
 }
 
 .member-cards {
@@ -387,3 +391,46 @@ button {
 }
 
 /* =============== Guestbook style End =======================*/
+/* =============== Header style start  =======================*/
+header {
+  margin: 0px;
+  padding: 0px;
+  height: 6rem;
+  background-color: #3d4b64;
+  display: flex;
+  justify-content: space-between;
+}
+#hh{
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  display: flex;
+  padding-top: 1.5rem;
+  padding-left: 150px;
+  text-wrap: nowrap;
+}
+#nn{
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  display: flex;
+  padding-top: 1.5rem;
+  padding-left: 150px;
+  text-wrap: nowrap;
+  display: flex;
+  gap: 50px;
+  padding-right: 150px;
+}
+#nn a {
+  text-decoration: none; 
+  color: #ffffff; /
+}
+#nn a:hover {
+  color: #000000;
+  transition: color 0.4s ease-in-out; 
+}
+
+/* =============== Header style End  =======================*/
+footer{
+  height: 4rem;
+}

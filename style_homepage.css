@@ -8,13 +8,12 @@
 }
 
 .padd-150 {
-  padding: 0 150px;
+  padding: 15px 150px;
 }
 
 body {
   width: 100%;
   background-color: #e5e0d9;
-  padding: 15px 0;
 }
 
 li,
@@ -46,17 +45,17 @@ button {
 
 /* cards Design */
 .card {
-  flex: 0 1 calc(33.33% - 20px);
-  /* Responsive width */
-  max-width: 300px;
-  /* Maximum width */
-  height: 430px;
+  flex: 0 0 33.33%;
+  width: 100%;
+  max-width: calc(33.33% - 30px);
+  height: 550px;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  font-family: "Space Mono", monospace;
 }
 
 /* cards Label */
@@ -118,7 +117,10 @@ button {
   z-index: 2;
   text-align: left;
 }
-
+.card-details .name {
+  font-family: 'IBM Plex Sans Thai';
+  font-weight: bold;
+}
 /* Contact */
 .contact {
   display: flex;
@@ -254,13 +256,14 @@ button {
 
 /* =============== Member style start =======================*/
 /* =============== Guestbook style start =======================*/
-/* Guestbook container */
 .guestbook {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 120px;
   flex-direction: column;
+  font-family: "Space Mono", monospace;
 }
 
 .guestbook h1 {
@@ -325,15 +328,15 @@ button {
 #guestlist {
   display: flex;
   width: 100%;
-  gap: 25px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-top: 25px;
+  gap: 15px 0;
 }
 
 .guest-card {
-  flex: 0 0 33.33%;
+  flex: 0 0 calc(33.33% - 25px);
   width: 100%;
   max-width: calc(33.33% - 25px);
   height: auto;
@@ -345,6 +348,7 @@ button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .guest-card:hover {
   transform: translateY(-5px);
@@ -434,3 +438,5 @@ header {
 footer{
   height: 4rem;
 }
+
+/* Responsive */

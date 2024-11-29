@@ -1,3 +1,4 @@
+/* ================== Guest book feature start ================== */
 const stars = document.querySelectorAll('.star-input .star');
 const ratingOutput = document.getElementById('output');
 
@@ -78,3 +79,7 @@ function generateStars(rating) {
   }
   return starsHtml;
 }
+/* ================== Guest book feature end ================== */
+/* ================== Member scrolling start ================== */
+
+/* ================== Member scrollinge end ================== */

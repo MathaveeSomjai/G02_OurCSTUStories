@@ -32,6 +32,7 @@ button {
   font-size: 48px;
   margin-bottom: 20px;
   color: #333;
+  font-family: "Space Mono", monospace;
 }
 
 .member-cards {
@@ -332,11 +333,40 @@ header {
   padding: 0px;
   height: 6rem;
   background-color: #3d4b64;
+  display: flex;
+  justify-content: space-between;
 }
 #hh{
   color: white;
   font-family: "Space Mono", monospace;
   font-size: 2rem;
+  display: flex;
+  padding-top: 1.5rem;
+  padding-left: 150px;
+  text-wrap: nowrap;
+}
+#nn{
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  display: flex;
+  padding-top: 1.5rem;
+  padding-left: 150px;
+  text-wrap: nowrap;
+  display: flex;
+  gap: 50px;
+  padding-right: 150px;
+}
+#nn a {
+  text-decoration: none; 
+  color: #ffffff; /
+}
+#nn a:hover {
+  color: #000000;
+  transition: color 0.4s ease-in-out; 
 }
 
 /* =============== Header style End  =======================*/
+footer{
+  height: 4rem;
+}

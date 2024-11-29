@@ -81,5 +81,24 @@ function generateStars(rating) {
 }
 /* ================== Guest book feature end ================== */
 /* ================== Member scrolling start ================== */
+// Select the member-cards container
+const memberCardsContainer = document.querySelector('.member-cards');
+
+// Scroll speed factor (increase this value for faster scrolling)
+const scrollSpeedFactor = 2; // You can experiment with this value
+
+// Add a wheel event listener to the container
+memberCardsContainer.addEventListener('wheel', function (e) {
+    if (e.deltaY !== 0) { // Check if the user is scrolling vertically
+        e.preventDefault(); // Prevent vertical scrolling on the member-cards container
+
+        // Smoothly scroll the container horizontally based on the wheel delta, with scroll speed factor
+        memberCardsContainer.scrollBy({
+            left: e.deltaY * scrollSpeedFactor, // Increase horizontal scroll speed
+            behavior: 'smooth' // Enable smooth scrolling behavior
+        });
+    }
+}, { passive: false });
+
 
 /* ================== Member scrollinge end ================== */

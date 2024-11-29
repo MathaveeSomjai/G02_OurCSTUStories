@@ -14,6 +14,7 @@
 body {
   width: 100%;
   background-color: #e5e0d9;
+  overflow: auto;
 }
 
 li,
@@ -37,17 +38,18 @@ button {
 
 .member-cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-evenly;
+  overflow-x: auto; /* Enable horizontal scroll */
+  overflow-y: hidden;
+  margin-bottom: 25px; /* Space to avoid cutting the bottom of scroll */
+  padding: 15px;
+  scroll-behavior: smooth;
 }
 
 
 /* cards Design */
 .card {
-  flex: 0 0 33.33%;
-  width: 100%;
-  max-width: calc(33.33% - 30px);
+  flex: 0 0 350px; /* Set a fixed width for each card */
   height: 550px;
   position: relative;
   border-radius: 10px;
@@ -56,6 +58,20 @@ button {
   transition: all 0.3s ease;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   font-family: "Space Mono", monospace;
+  scroll-snap-align: start; /* Optional: Make each card snap to viewport */
+}
+
+.member-cards::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.member-cards::-webkit-scrollbar-thumb {
+  background-color: #ed6469;
+  border-radius: 10px;
+}
+
+.member-cards::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
 
 /* cards Label */

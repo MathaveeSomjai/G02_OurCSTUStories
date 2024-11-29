@@ -1,48 +1,81 @@
-//start guestbook//
-const guestForm = document.getElementById("guestform");//declare variable//
-const guestList = document.getElementById("guestlist");//declare variable//
+    // Add event listeners to stars for hover and selection
+    const stars = document.querySelectorAll('.star-input .star');
+    const ratingOutput = document.getElementById('output');
 
-guestForm.addEventListener('submit', function (e) {
-    e.preventDefault();
+    stars.forEach(star => {
+      star.addEventListener('mouseover', () => {
+        const ratingValue = star.getAttribute('data-value');
+        highlightStars(ratingValue, 'hovered');
+      });
 
-    const Email = document.getElementById("email").value;//ประกาศตัวแปรและรับค่าเข้ามา//
-    const Name = document.getElementById("name").value;//ประกาศตัวแปรและรับค่าเข้ามา//
-    const Comment = document.getElementById("comment").value;//ประกาศตัวแปรและรับค่าเข้ามา//
-    
-    const guestCard = document.createElement('div');
-    guestCard.classList.add('guest-card');
-    guestCard.innerHTML = `
-                <h2>${Name}</h2>
-                <p><strong>Email:</strong>${Email}</p>
-                <p><strong>Comment:</strong> ${Comment}</p>`; //ให้แสดงข้อความขึ้นหลังกดส่ง//
+      star.addEventListener('mouseout', () => {
+        removeHighlight('hovered');
+      });
 
-    guestList.appendChild(guestCard);//ไม่รีเซ็ต(ถ้ากรอกใหม่จะขึ้นต่ออันเดิม)//
-});
+      star.addEventListener('click', () => {
+        const ratingValue = star.getAttribute('data-value');
+        document.getElementById('rating').value = ratingValue;
+        highlightStars(ratingValue, 'selected');
+        ratingOutput.innerText = `Rating is: ${ratingValue}/5`;
+      });
+    });
 
-// count star rating//
-//to access the star//
-let stars = document.getElementsByClassName("star");
-let output = document.getElementById("output");
-
-// Funtion to update rating//
-function gfg(n) {
-    remove();
-    for (let i = 0; i < n; i++) {
-        if (n == 1) cls = "one";
-        else if (n == 2) cls = "two";
-        else if (n == 3) cls = "three";
-        else if (n == 4) cls = "four";
-        else if (n == 5) cls = "five";
-        stars[i].className = "star " + cls;
+    // Function to highlight stars
+    function highlightStars(rating, className) {
+      stars.forEach(star => {
+        if (star.getAttribute('data-value') <= rating) {
+          star.classList.add(className);
+        } else {
+          star.classList.remove(className);
+        }
+      });
     }
-    output.innerText = "Rating is: " + n + "/5";
-}
 
-// To remove the pre-applied styling//
-function remove() {
-    let i = 0;
-    while (i < 5) {
-        stars[i].className = "star";
-        i++;
+    // Function to remove a specific highlight class
+    function removeHighlight(className) {
+      stars.forEach(star => {
+        star.classList.remove(className);
+      });
     }
-}
+
+    // Function to add the rating to the guest list
+    document.getElementById('guestform').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get form data
+      const email = document.getElementById('email').value;
+      const name = document.getElementById('name').value;
+      const comment = document.getElementById('comment').value;
+      const rating = document.getElementById('rating').value;
+
+      if (!rating) return; // Return if no rating selected
+
+      // Create a new guest card
+      const guestCard = document.createElement('div');
+      guestCard.classList.add('guest-card');
+      
+      // Add guest info and rating
+      guestCard.innerHTML = `
+        <h2>${name}</h2>
+        <p>Email: ${email}</p>
+        <p>Comment: ${comment}</p>
+        <p class="guest-rating">${generateStars(rating)}</p>
+      `;
+      
+      // Append the new guest card to the list
+      document.getElementById('guestlist').appendChild(guestCard);
+
+      // Clear the form
+      document.getElementById('guestform').reset();
+      removeHighlight('selected');
+      ratingOutput.innerText = 'Rating is: 0/5';
+    });
+
+    // Function to generate star elements based on the rating value
+    function generateStars(rating) {
+      let starsHtml = '';
+      for (let i = 1; i <= 5; i++) {
+        starsHtml += `<span class="star-output">${i <= rating ? '★' : '☆'}</span>`;
+      }
+      return starsHtml;
+    }

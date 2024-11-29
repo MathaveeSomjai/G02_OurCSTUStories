@@ -11,6 +11,7 @@
 body {
   width: 100%;
   background-color: #e5e0d9;
+  padding: 15px 0;
 }
 
 li,
@@ -153,6 +154,7 @@ button {
 .card:nth-child(2) .card-label {
   background-color: #dea7aa;
 }
+
 .card:nth-child(2) .contact-items a:hover {
   color: #ed6469;
 }
@@ -169,6 +171,7 @@ button {
 .card:nth-child(3) .card-label {
   background-color: #7e94a2;
 }
+
 .card:nth-child(3) .contact-items a:hover {
   color: #2c3d48;
 }
@@ -185,6 +188,7 @@ button {
 .card:nth-child(4) .card-label {
   background-color: #b39eb5;
 }
+
 .card:nth-child(4) .contact-items a:hover {
   color: #705473;
 }
@@ -192,6 +196,7 @@ button {
 .card:nth-child(4)::before {
   background-image: url('resoures/members_pic/6709616822.png');
 }
+
 /* card 5*/
 .card:nth-child(5) .card-details {
   background-color: #c23b2280;
@@ -200,6 +205,7 @@ button {
 .card:nth-child(5) .card-label {
   background-color: #c23b22;
 }
+
 .card:nth-child(5) .contact-items a:hover {
   color: #682014;
 }
@@ -207,6 +213,7 @@ button {
 .card:nth-child(5)::before {
   background-image: url('resoures/members_pic/6709616715.png');
 }
+
 /* card 6*/
 .card:nth-child(6) .card-details {
   background-color: #FAEDCB80;
@@ -215,6 +222,7 @@ button {
 .card:nth-child(6) .card-label {
   background-color: #FAEDCB;
 }
+
 .card:nth-child(6) .contact-items a:hover {
   color: #ebba3d;
 }
@@ -222,6 +230,7 @@ button {
 .card:nth-child(6)::before {
   background-image: url('resoures/members_pic/6709616392.png');
 }
+
 /* card 7*/
 .card:nth-child(7) .card-details {
   background-color: #f9f6f280;
@@ -230,6 +239,7 @@ button {
 .card:nth-child(7) .card-label {
   background-color: #f9f6f2;
 }
+
 .card:nth-child(7) .contact-items a:hover {
   color: #d1d1d1;
 }
@@ -237,89 +247,143 @@ button {
 .card:nth-child(7)::before {
   background-image: url('resoures/members_pic/6709616632.jpg');
 }
+
 /* =============== Member style start =======================*/
 /* =============== Guestbook style start =======================*/
+/* Guestbook container */
 .guestbook {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 120px;
+  flex-direction: column;
+}
+
+.guestbook h1 {
+  font-size: 48px;
+  align-self: start;
 }
 
 .guestbook .container {
-
-  height: 510px;
+  height: auto;
   width: 600px;
-  padding-top: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding: 15px;
   background-color: #dea7aa;
   border-radius: 8px;
-  margin: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
 }
 
-/*2 style container for guestbook*/
+.guestbook .container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-/*style email*/
-.form-email input {
-  border-radius: 7px;
-  border-style: none;
-  height: 1.5rem;
+.form-email input,
+.form-name input,
+.form-comment input {
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
   width: 300px;
+  margin-bottom: px;
 }
-
-.form-name input {
-  border-radius: 7px;
-  border-style: none;
-  height: 1.5rem;
-  width: 300px;
-}
-
-/*3 style input text for guestbook*/
 
 .form-comment input {
-  border-radius: 7px;
-  border-style: none;
-  height: 7rem;
   width: 500px;
+  height: 7rem;
 }
 
-/*4 style input comment for guestbook*/
+/* Rating system */
+.star-input {
+  display: flex;
+}
 
+.star {
+  font-size: 36px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border-radius: 50%;
+}
+
+.star.hovered,
+.star.selected {
+  color: gold;
+}
+
+.guest-rating .star {
+  font-size: 20px;
+  color: gold;
+}
+
+/* Guest Card */
+#guestlist {
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.guest-card {
+  flex: 0 0 33.33%;
+  width: 100%;
+  max-width: calc(33.33% - 25px);
+  height: auto;
+  border: 2px solid #705473;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.guest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.guest-card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.guest-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.guest-card p strong {
+  color: #705473;
+}
+
+/* Button */
 .btn {
+  display: flex;
+  justify-content: flex-end;
   padding-top: 25px;
 }
 
-
-/*5 style submit button for guestbook*/
-
-/*6 style rating star*/
-
-.star {
-  font-size: 30px;
+/* Submit Button */
+.btn button {
+  padding: 10px 20px;
+  background-color: #705473;
+  color: white;
+  border: none;
+  border-radius: 25px;
   cursor: pointer;
+  transition: background-color 0.3s ease , transform 0.5s ease;
 }
- 
-.one {
-  color: rgb(255, 0, 0);
+
+.btn button:hover {
+  background-color: #b39eb5;
+  transform: scale(1.05);
 }
- 
-.two {
-  color: rgb(255, 106, 0);
-}
- 
-.three {
-  color: rgb(251, 255, 120);
-}
- 
-.four {
-  color: rgb(255, 255, 0);
-}
- 
-.five {
-  color: rgb(24, 159, 14);
-}
- 
+
 /* =============== Guestbook style End =======================*/

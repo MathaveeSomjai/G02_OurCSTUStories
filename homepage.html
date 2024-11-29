@@ -221,44 +221,44 @@
             </div>
         </div>
     </section>
-    <section class="guestbook">
+    <section class="guestbook padd-150">
+        <h1>Guestbook</h1>
+        <div id="guestlist"></div> <!-- This is where the guestbook entries will appear -->
         <div class="container">
-            <br>
-            <h2>Add Your Comment</h2><br><!--1 add h2 in guestbook-->
+            <h2>Add Your Comment</h2>
             <form id="guestform">
-                <div class="form-email"><!--add email in guestbook-->
+                <div class="form-email">
                     <label for="email">Email:<br><br></label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <br>
-                <div class="form-name"> <!--1 add a name in guestbook-->
+                <div class="form-name">
                     <label for="name">Name:<br><br></label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <br>
-                <div class="form-comment"> <!--2 add a comment in guestbook-->
+                <div class="form-comment">
                     <label for="comment">Comment:<br><br></label>
                     <input type="text" id="comment" name="comment" required>
                 </div>
-            <!--star star rating for guestbook-->
-            <br>
-            <table>
-            <tr>
-            <td><span onclick="gfg(1)" class="star">★</span>
-                <span onclick="gfg(2)" class="star">★</span>
-                <span onclick="gfg(3)" class="star">★</span>
-                <span onclick="gfg(4)" class="star">★</span>
-                <span onclick="gfg(5)" class="star">★</span></td>
-            <td><h4 id="output">Rating is: 0/5</h4></td>
-            </tr>
-            </table>
-                <div class="btn"> <!--3 add a summit button in guestbook-->
+                <!-- Star rating system for guestbook -->
+                <br>
+                <div class="star-input" id="starInput">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <input type="hidden" id="rating" name="rating" value="">
+                <div class="btn">
                     <button type="submit">Submit</button>
                 </div>
-                <div id="guestlist"></div>
             </form>
         </div>
     </section>
+
+
     <!--1 Javascript-->
     <script src="javascript.js"></script>
 </body>

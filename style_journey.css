@@ -12,7 +12,7 @@ body {
 }
 
 /*==============เส้นไทม์ไลน์===============*/
-.timline {
+.timeline {
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
@@ -22,14 +22,14 @@ body {
     content: '';
     position: absolute;
     width: 6px;
-    height: 300%;
+    height: 100%;
     /*ปรับความยาวเส้น*/
     background: #fff;
-    top: 55px;
+    top: 0px;
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 6s linear forwards;
+    animation: moveline 7s linear forwards;
     /*เรียกใช้ keyframes moveline /ไว้มาปรับเวลาหลังใส่ข้อมูลครบ*/
 }
 
@@ -39,7 +39,7 @@ body {
     }
 
     100% {
-        height: 300%;
+        height: 100%;
     }
 }
 

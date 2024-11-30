@@ -60,6 +60,12 @@
                             <img class="pic_member6" src="/G02_OurCSTUStories/resoures/members_pic/6709616830.jpg">
                         </a>
                     </div>
+                    <div class="jump_member7">
+                        <div class="name_member7">Gike</div>
+                        <a href="" target="_blank">
+                            <img class="pic_member7" src="/G02_OurCSTUStories/resoures/members_pic/6709681081.png">
+                        </a>
+                    </div>
     
                 </div>
             </div>
@@ -106,6 +112,11 @@
                             <br>
                             อยากทำงานในบริษัทที่มีความมั่นคงและไม่ต้องต้องเข้าออฟฟิศ ถ้าเป็นไปได้อยากอยากให้มีสังคมการทำงานที่ดี
                     </div>
+                    <div class="member7_info">
+                        Work<br><br>
+                            ทำงานสาย IT ในบริษัทตปท.<br>
+                            เรียนต่อปริญญาโท
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,6 +142,10 @@
         const member6_info = document.querySelector('.member6_info');
 
     
+        const pic_member7 = document.querySelector('.pic_member7');
+        const member7_info = document.querySelector('.member7_info');
+
+
         pic_member1.addEventListener('mouseenter', () => {
         member1_info.style.transform = 'scale(1.2)';
         member1_info.style.zIndex = '2'; 
@@ -189,6 +204,16 @@
         pic_member6.addEventListener('mouseleave', () => {
         member6_info.style.transform = 'scale(1)'; 
         member6_info.style.zIndex = '1'; 
+        });
+
+        pic_member7.addEventListener('mouseenter', () => {
+        member7_info.style.transform = 'scale(1.2)';
+        member7_info.style.zIndex = '2'; 
+        });
+        
+        pic_member7.addEventListener('mouseleave', () => {
+        member7_info.style.transform = 'scale(1)'; 
+        member7_info.style.zIndex = '1'; 
         });
     </script>
 </body>

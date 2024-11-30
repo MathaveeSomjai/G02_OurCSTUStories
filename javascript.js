@@ -14,7 +14,8 @@ guestForm.addEventListener('submit', function (e) {
     guestCard.innerHTML = `
                 <h2>${Name}</h2>
                 <p><strong>Email:</strong>${Email}</p>
-                <p><strong>Comment:</strong> ${Comment}</p>`; //ให้แสดงข้อความขึ้นหลังกดส่ง//
+                <p><strong>Comment:</strong> ${Comment}</p>
+                <p><br></p>`; //ให้แสดงข้อความขึ้นหลังกดส่ง//
 
     guestList.appendChild(guestCard);//ไม่รีเซ็ต(ถ้ากรอกใหม่จะขึ้นต่ออันเดิม)//
 });

@@ -1,31 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family: "IBM Plex Sans Thai", sans-serif; /*ไว้มาเปลี่ยนให้เหมือนเพื่อนอีกที*/
+    font-family: "IBM Plex Sans Thai", sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #e5e0d9;
 }
 
 /*==============เส้นไทม์ไลน์===============*/
-.timline{
+.timline {
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
 }
+
 .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    height: 300%; /*ปรับความยาวเส้น*/
+    height: 300%;
+    /*ปรับความยาวเส้น*/
     background: #fff;
     top: 55px;
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 6s linear forwards; /*เรียกใช้ keyframes moveline /ไว้มาปรับเวลาหลังใส่ข้อมูลครบ*/
+    animation: moveline 6s linear forwards;
+    /*เรียกใช้ keyframes moveline /ไว้มาปรับเวลาหลังใส่ข้อมูลครบ*/
 }
 
 @keyframes moveline {
@@ -39,22 +44,28 @@ body{
 }
 
 /*===============container===============*/
-.container{
+.container {
     position: relative;
     width: 50%;
-    animation: movedown 1s linear forwards; /*เรียกใช้ keyframes movedown*/
+    animation: movedown 1s linear forwards;
+    /*เรียกใช้ keyframes movedown*/
     opacity: 0;
 }
 
 .left-container {
-    padding: 10px 50px 10px 150px;
+    padding: 10px 64px 10px 150px;
+    left: 0;
+
 }
 
 .right-container {
-    padding: 10px 150px 10px 50px;
+    padding: 10px 150px 10px 64px;
+    left: 50%;
 }
 
-@keyframes movedown { 
+
+
+@keyframes movedown {
     0% {
         opacity: 1;
         transform: translateY(-30px);
@@ -65,25 +76,32 @@ body{
         transform: translateY(0px);
     }
 }
+
 /*ดีเลย์การปรากฏของ container*/
-.container:nth-child(1){
+.container:nth-child(1) {
     animation-delay: 0s;
 }
+
 .container:nth-child(2) {
     animation-delay: 1s;
 }
+
 .container:nth-child(3) {
     animation-delay: 2s;
 }
+
 .container:nth-child(4) {
     animation-delay: 3s;
 }
+
 .container:nth-child(5) {
     animation-delay: 4s;
 }
+
 .container:nth-child(6) {
     animation-delay: 5s;
 }
+
 .container:nth-child(7) {
     animation-delay: 6s;
 }
@@ -93,33 +111,35 @@ body{
     height: 0;
     width: 0;
     position: absolute;
-    top: 28px;
+    top: 60px;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 15px solid rgb(255, 255, 255);
-    right: 36px;
+    right: 50px;
 }
 
 .right-container-arrow {
     height: 0;
     width: 0;
     position: absolute;
-    top: 28px;
+    top: 60px;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid rgb(255, 255, 255);
-    left: 36px;
+    left: 50px;
 }
 
 /*==============กล่องข้อความ===============*/
-.text-box{
+.text-box {
     padding: 20px 40px;
     background: #ffffff;
     border-radius: 6px;
     font-size: 15px;
+    margin-top: 30px;
 }
+
 .text-box h2 {
     font-weight: 600;
 }
@@ -127,13 +147,6 @@ body{
 .text-box small {
     display: inline-block;
     margin-bottom: 15px;
-}
-
-.left-container{
-    left: 0;
-}
-.right-container{
-    left: 50%;
 }
 
 li {
@@ -146,56 +159,61 @@ small span {
 
 /*================รูปภาพ=================*/
 img {
-    max-width: 50px;
+    max-width: 80px;
 }
-.container img{
+
+.container img {
     position: absolute;
-        width: 40px;
-        border-radius: 50%;
-        right: -20px;
-        top: 32px;
-        z-index: 10px;
-        size: 20px;
+    width: 80px;
+    border-radius: 50%;
+    right: -40px;
+    top: 32px;
+    z-index: 10px;
+    size: 20px;
 }
-.right-container img{
-    left: -20px;
+
+.right-container img {
+    left: -40px;
 }
 
 /*==============responsive==============*/
 /*ทำงานเมื่อหน้าจอมีความกว้างไม่เกิน 600px*/
-@media screen and (max-width: 600px){
-    .timeline{
+@media screen and (max-width: 600px) {
+    .timeline {
         margin: 50px auto;
     }
-    .timeline::after{
-        left: 31px;
+
+    .timeline::after {
+        left: 50px;
     }
-    .container{
+
+    .container {
         width: 100%;
-        padding-left: 80px;
+        padding-left: 120px;
         padding-right: 25px;
     }
-    .text-box{
+
+    .text-box {
         font-size: 13px;
     }
-    .text-box small{
-        margin-bottom:10px ;
+
+    .text-box small {
+        margin-bottom: 10px;
     }
-    .right-container{
+
+    .right-container {
         left: 0;
     }
 
-    .left-container img, .right-container img{
+    .left-container img,
+    .right-container img {
         left: 10px;
     }
 
-    .left-container-arrow, .right-container-arrow{
+    .left-container-arrow,
+    .right-container-arrow {
         border-right: 15px solid #ffffff;
         border-left: 0;
-        left: 66px;
+        left: 106px;
     }
 }
-
-
-
-

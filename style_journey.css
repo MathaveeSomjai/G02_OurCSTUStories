@@ -11,6 +11,42 @@ body {
     background: #e5e0d9;
 }
 
+/*============== navigation bar ==============*/
+header {
+    margin: 0;
+    padding: 0;
+    height: 6rem;
+    background-color: #3d4b64;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    padding: 0 9rem; 
+    box-sizing: border-box; 
+  }
+  #hh {
+    color: white;
+    font-family: "Space Mono", monospace;
+    font-size: 2rem;
+    text-wrap: nowrap;
+    padding-right: 1rem;
+  }
+  #nn {
+    display: flex;
+    font-size: 2rem;
+    gap: 3.5rem; 
+    font-family: "Space Mono", monospace;
+  }
+  #nn a {
+    text-decoration: none; 
+    color: #ffffff; /
+  }
+  #nn a:hover {
+    color: #000000;
+    font-size: 26pt;
+    transition: 1s;
+  }
+
 /*==============เส้นไทม์ไลน์===============*/
 .timeline {
     position: relative;
@@ -177,6 +213,31 @@ img {
 }
 
 /*==============responsive==============*/
+/*----- for navigation bar -----*/
+@media (max-width: 1068px) {
+    header {
+      flex-direction: column; 
+      height: auto; 
+      padding: 1.3rem; 
+    }
+  
+    #hh {
+      font-size: 1.5rem; 
+      padding: 0;
+      text-align: center;
+    }
+  
+    #nn {
+      gap: 1rem; 
+      justify-content: center; 
+      padding: 0;
+      font-size: 1rem;
+    }
+    #nn a:hover {
+        font-size: 13pt;
+      }
+}
+
 /*ทำงานเมื่อหน้าจอมีความกว้างไม่เกิน 600px*/
 @media screen and (max-width: 600px) {
     .timeline {

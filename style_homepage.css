@@ -277,7 +277,11 @@ button {
   width: 100%;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   margin-top: 10px;
+=======
+  margin-top: 120px;
+>>>>>>> 0a044356ea845ba5a25cfada82337eda4bc65695
   flex-direction: column;
   font-family: "Space Mono", monospace;
 }
@@ -353,7 +357,11 @@ button {
 
 .guest-card {
   flex: 0 0 calc(33.33% - 25px);
+<<<<<<< HEAD
   width:auto;
+=======
+  width: 100%;
+>>>>>>> 0a044356ea845ba5a25cfada82337eda4bc65695
   max-width: calc(33.33% - 25px);
   height: auto;
   border: 2px solid #705473;
@@ -363,9 +371,12 @@ button {
   background-color: #f9f9f9;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+<<<<<<< HEAD
   word-wrap: break-word;
   word-break: break-word;
   overflow-wrap: break-word;
+=======
+>>>>>>> 0a044356ea845ba5a25cfada82337eda4bc65695
 }
 
 
@@ -454,6 +465,7 @@ footer{
   height: 4rem;
 }
 
+<<<<<<< HEAD
 /* Responsive */
 @media (max-width: 600px) {
   #guestlist {
@@ -652,3 +664,6 @@ footer{
   overflow: hidden; /* Hide overflow if needed */
   text-overflow: ellipsis; /* Add ellipsis for overflowed text */
 }
+=======
+/* Responsive */
+>>>>>>> 0a044356ea845ba5a25cfada82337eda4bc65695

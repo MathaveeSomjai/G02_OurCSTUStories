@@ -86,6 +86,9 @@
     filter: brightness(80%);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
 box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
 }
 
 .name_member1 {
@@ -133,6 +136,9 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     filter: brightness(80%);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
 box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
 }
 
 .name_member2 {
@@ -174,6 +180,9 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     filter: brightness(80%);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
 box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
 }
 
 .name_member3 {
@@ -215,6 +224,9 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     filter: brightness(80%);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
 box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
 }
 
 .name_member4 {
@@ -256,6 +268,9 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     filter: brightness(80%);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
 box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
 }
 
 .name_member5 {
@@ -297,6 +312,9 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     filter: brightness(80%);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
 box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
 }
 
 .name_member6 {
@@ -324,6 +342,49 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     filter: brightness(100%);
 }
 
+.jump_member7 {
+    margin-left: -160px;
+}
+
+.pic_member7 {
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    border: solid 3px;
+    border-color: #000000cc;
+    width: 220px;
+    filter: brightness(80%);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
+}
+
+.name_member7 {
+    position: relative;
+    float: left;
+    left: 114px;
+    top: 10px;
+    z-index: 3;
+    font-size: 16pt;
+    font-family: Itim;
+    color: #000000;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.jump_member7:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.jump_member7 .pic_member7:hover {
+    filter: brightness(100%);
+}
 .member_info {
     width: 100%;
     height: 400px;
@@ -337,7 +398,7 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
 
 }
 
-.member1_info, .member2_info, .member3_info, .member4_info, .member5_info, .member6_info {
+.member1_info, .member2_info, .member3_info, .member4_info, .member5_info, .member6_info, .member7_info {
     grid-column: 1 / 2; 
     grid-row: 1 / 2;
     display: flex;
@@ -428,4 +489,18 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     border-radius: 30px;
     border-color:#000000cc ;
     background-color: #c090db;
+}
+
+.member7_info {
+    margin-left: 5px;
+    margin-top: -45px;
+    width: 1010px;
+    height: 400px;
+    border-bottom: solid 3px;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    border-top: solid 3px;
+    border-radius: 30px;
+    border-color:#000000cc ;
+    background-color: #6552e1;
 }

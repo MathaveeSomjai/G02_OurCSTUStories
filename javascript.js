@@ -101,4 +101,8 @@ memberCardsContainer.addEventListener('wheel', function (e) {
 }, { passive: false });
 
 
+<<<<<<< HEAD
 /* ================== Member scrollinge end ================== */
+=======
+/* ================== Member scrollinge end ================== */
+>>>>>>> 0a044356ea845ba5a25cfada82337eda4bc65695

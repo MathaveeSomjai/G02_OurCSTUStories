@@ -40,7 +40,9 @@ header {
   }
   #nn a {
     text-decoration: none; 
-    color: #ffffff; /
+    color: #ffffff; 
+    font-family: "Space Mono", monospace;
+    
   }
   #nn a:hover {
     color: #000000;

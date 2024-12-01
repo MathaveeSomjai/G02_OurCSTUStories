@@ -743,3 +743,994 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
 .engfont {
     font-family: "Space Mono", monospace;
 }
+
+@media screen and (max-width: 1140px) {
+    header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 1.3rem; 
+    }
+    
+    #hh {
+        font-size: 1.5rem; 
+        padding: 0;
+        text-align: center;
+    }
+    
+    #nn {
+        gap: 1rem; 
+        justify-content: center; 
+        padding: 0;
+        font-size: 1rem;
+    }
+    #nn a:hover {
+          font-size: 13pt;
+    }
+
+    .pic_member1 {
+        width: 180px;
+    }
+
+    .name_member1 {
+        font-size: 12pt;
+        position: relative;
+        float: left;
+        left: 40px;
+    }
+
+    .pic_member2 {
+        width: 180px;
+    }
+
+    .name_member2 {
+        font-size: 12pt;
+        position: relative;
+        float: left;
+        left: 43px;
+    }
+
+    .pic_member3 {
+        width: 180px;
+    }
+
+    .name_member3 {
+        font-size: 12pt;
+        position: relative;
+        float: left;
+        left: 50px;
+    }
+
+    .pic_member4 {
+        width: 180px;
+    }
+
+    .name_member4 {
+        font-size: 12pt;
+        position: relative;
+        float: left;
+        left: 42px;
+    }
+
+    .pic_member5 {
+        width: 180px;
+    }
+
+    .name_member5 {
+        font-size: 12pt;
+        position: relative;
+        float: left;
+        left: 90px;
+    }
+
+    .pic_member6 {
+        width: 180px;
+    }
+
+    .name_member6 {
+        font-size: 12pt;
+        position: relative;
+        float: left;
+        left: 47px;
+    }
+
+    .pic_member7 {
+        width: 180px;
+    }
+
+    .name_member7 {
+        font-size: 12pt;
+        position: relative;
+        float: left;
+        left: 49px;
+    }
+
+    .ourfuture_info {
+        width: 800px;
+        height: 300px;
+    }
+
+    .member1_info ,.member2_info ,.member3_info ,.member4_info ,.member5_info ,.member6_info ,.member7_info {
+        width: 800px;
+        height: 300px;
+
+        .h1_1 ,.p1_1 ,.h1_2, .p1_2 {
+            font-size: 14pt;
+        }
+
+        .h2_1 ,.p2_1 ,.h2_2, .p2_2 {
+            font-size: 14pt;
+        }
+
+        .h3_1 ,.p3_1 ,.h3_2, .p3_2 {
+            font-size: 14pt;
+        }
+
+        .h4_1 ,.p4_1 ,.h4_2, .p4_2 {
+            font-size: 14pt;
+        }
+
+        .h5_1 ,.p5_1 ,.h5_2, .p5_2 {
+            font-size: 13pt;
+        }
+
+        .h6_1 ,.p6_1 {
+            font-size: 14pt;
+        }
+
+        .h7_1 ,.p7_1 {
+            font-size: 14pt;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .grid_main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .introduction_info {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        margin-top: 80px;margin-bottom: 100px;
+    }
+
+    .flexbox_memberlist {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .boxmember_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        padding-bottom: 200px;
+    }
+
+    .jump_member1 {
+        margin: 0px;
+    }
+
+    .pic_member1 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member1 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 35px;
+        top:10px;
+    }
+
+    .jump_member2 {
+        margin: 0px;
+        margin-left: -80px;
+    }
+
+    .pic_member2 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member2 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 38px;
+        top:10px;
+    }
+
+    .jump_member3 {
+        margin: 0px;
+        margin-left: -80px;
+    }
+
+    .pic_member3 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member3 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 44px;
+        top:10px;
+    }
+
+    .jump_member4 {
+        margin: 0px;
+        margin-left: -80px;
+    }
+
+    .pic_member4 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member4 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 36px;
+        top:10px;
+    }
+
+    .jump_member5 {
+        margin: 0px;
+        margin-left: -120px;
+    }
+
+    .pic_member5 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member5 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 74px;
+        top:10px;
+    }
+
+    .jump_member6 {
+        margin: 0px;
+        margin-left: -80px;
+    }
+
+    .pic_member6 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member6 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 40px;
+        top:10px;
+    }
+
+    .jump_member7 {
+        margin: 0px;
+        margin-left: -80px;
+    }
+
+    .pic_member7 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member7 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 44px;
+        top:10px;
+    }
+
+    .ourfuture_info {
+        width: 450px;
+        height: 300px;
+    }
+
+    .member1_info ,.member2_info ,.member3_info ,.member4_info ,.member5_info ,.member6_info ,.member7_info {
+        width: 450px;
+        height: 300px;
+
+        .h1_1 ,.p1_1 ,.h1_2, .p1_2 {
+            font-size: 8pt;
+        }
+
+        .h2_1 ,.p2_1 ,.h2_2, .p2_2 {
+            font-size: 8pt;
+        }
+
+        .h3_1 ,.p3_1 ,.h3_2, .p3_2 {
+            font-size: 8pt;
+        }
+
+        .h4_1 ,.p4_1 ,.h4_2, .p4_2 {
+            font-size: 8pt;
+        }
+
+        .h5_1 ,.p5_1 ,.h5_2, .p5_2 {
+            font-size: 8pt;
+        }
+
+        .h6_1 ,.p6_1 {
+            font-size: 8pt;
+        }
+
+        .h7_1 ,.p7_1 {
+            font-size: 8pt;
+        }
+
+
+    }
+
+    .member1_info {
+        .h1_1 {
+            margin-right: 20px;
+            margin-top: 100px;
+        }
+    
+        .p1_1 {
+            margin-top: 105px;
+        }
+        
+        .h1_2 {
+            margin-right: 20px;
+            margin-bottom: 120px;
+        }
+    
+        .p1_2 {
+            margin-bottom: 100px;
+        }
+    }
+   
+    .member2_info {
+        .h2_1 {
+            margin-right: 20px;
+            margin-top: 70px;
+        }
+    
+        .p2_1 {
+            margin-top: 90px;
+        }
+        
+        .h2_2 {
+            margin-right: 20px;
+            margin-bottom: 130px;
+        }
+    
+        .p2_2 {
+            margin-bottom: 105px;
+        }
+    }
+  
+    .member3_info {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        .h3_1 {
+            margin-right: 20px;
+            margin-top: 70px;
+        }
+    
+        .p3_1 {
+            margin-top: 90px;
+        }
+        
+        .h3_2 {
+            margin-right: 20px;
+            margin-bottom: 90px;
+        }
+    
+        .p3_2 {
+            margin-bottom: 85px;
+        }
+    }
+   
+    .member4_info {
+        .h4_1 {
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+    
+        .p4_1 {
+            margin-top: 50px;
+        }
+        
+        .h4_2 {
+            margin-right: 20px;
+            margin-bottom: 50px;
+        }
+    
+        .p4_2 {
+            margin-bottom: 40px;
+        }
+    }
+ 
+    .member5_info {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+
+        .h5_1 {
+            margin-right: 20px;
+            margin-top: 60px;
+        }
+    
+        .p5_1 {
+            margin-top: 85px;
+        }
+        
+        .h5_2 {
+            margin-right: 20px;
+            margin-bottom: 50px;
+        }
+    
+        .p5_2 {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .member6_info {
+        .h6_1 {
+            margin-right: 20px;
+            margin-bottom: 55px;
+        }
+    
+        .p6_1 {
+            margin-top: 60px;
+        }
+    }
+    
+    .member7_info {
+        .h7_1 {
+            margin-right: 20px;
+            margin-bottom: 65px;
+        }
+    
+        .p7_1 {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid_main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+    }
+
+    .introduction_info {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        margin-top: 80px;margin-bottom: 100px;
+    }
+
+    .flexbox_memberlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .jump_member1 {
+        margin: 0px;
+        margin-bottom: -50px;
+    }
+
+    .pic_member1 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member1 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 35px;
+        top:10px;
+    }
+
+    .jump_member2 {
+        margin: 0px;
+        margin-left: -2px;
+        margin-bottom: -50px;
+    }
+
+    .pic_member2 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member2 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 38px;
+        top:10px;
+    }
+
+    .jump_member3 {
+        margin: 0px;
+        margin-left: -6px;
+        margin-bottom: -50px;
+    }
+
+    .pic_member3 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member3 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 44px;
+        top:10px;
+    }
+
+    .jump_member4 {
+        margin: 0px;
+        margin-bottom: -80px;
+    }
+
+    .pic_member4 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member4 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 36px;
+        top:10px;
+    }
+
+    .jump_member5 {
+        margin: 0px;
+        margin-left: 28px;
+        margin-bottom: -50px;
+    }
+
+    .pic_member5 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member5 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 8px;
+        top:35px;
+    }
+
+    .jump_member6 {
+        margin: 0px;
+        margin-left: -6px;
+        margin-bottom: -50px;
+    }
+
+    .pic_member6 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member6 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 40px;
+        top:10px;
+    }
+
+    .jump_member7 {
+        margin: 0px;
+        margin-left: -8px;
+        margin-bottom: -50px;
+    }
+
+    .pic_member7 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name_member7 {
+        font-size: 10pt;
+        position: relative;
+        float: left;
+        left: 44px;
+        top:10px;
+    }
+
+    .boxmember_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: left;
+        align-items: center;
+        padding-bottom: 200px;
+    }
+
+    .ourfuture_info {
+        width: 350px;
+        height: 450px;
+        margin-top: 70px;
+    }
+    
+    .member1_info ,.member2_info ,.member3_info ,.member4_info ,.member5_info ,.member6_info ,.member7_info {
+        width: 350px;
+        height: 450px;
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .grid_main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .introduction_info {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .flexbox_memberlist {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .boxmember_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        padding-bottom: 200px;
+    }
+
+    .jump_member1 {
+        margin: 0px;
+    }
+
+    .pic_member1 {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .name_member1 {
+        font-size: 8pt;
+        position: relative;
+        z-index: 2;
+        float: left;
+        left: 30px;
+        top:8px;
+    }
+
+    .jump_member2 {
+        margin: 0px;
+        margin-left: -60px;
+    }
+
+    .pic_member2 {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .name_member2 {
+        font-size: 8pt;
+        position: relative;
+        z-index: 2;
+        float: left;
+        left: 32px;
+        top:8px;
+    }
+
+    .jump_member3 {
+        margin: 0px;
+        margin-left: -60px;
+    }
+
+    .pic_member3 {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .name_member3 {
+        font-size: 8pt;
+        position: relative;
+        z-index: 2;
+        float: left;
+        left: 36px;
+        top:8px;
+    }
+
+    .jump_member4 {
+        margin: 0px;
+        margin-left: -60px;
+    }
+
+    .pic_member4 {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .name_member4 {
+        font-size: 8pt;
+        position: relative;
+        z-index: 2;
+        float: left;
+        left: 32px;
+        top:8px;
+    }
+
+    .jump_member5 {
+        margin: 0px;
+        margin-left: -100px;
+    }
+
+    .pic_member5 {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .name_member5 {
+        font-size: 8pt;
+        position: relative;
+        z-index: 2;
+        float: left;
+        left: 64px;
+        top:8px;
+    }
+
+    .jump_member6 {
+        margin: 0px;
+        margin-left: -60px;
+    }
+
+    .pic_member6 {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .name_member6 {
+        font-size: 8pt;
+        position: relative;
+        z-index: 2;
+        float: left;
+        left: 36px;
+        top:8px;
+    }
+
+    .jump_member7 {
+        margin: 0px;
+        margin-left: -60px;
+    }
+
+    .pic_member7 {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .name_member7 {
+        font-size: 8pt;
+        position: relative;
+        z-index: 2;
+        float: left;
+        left: 36px;
+        top:8px;
+    }
+
+    .ourfuture_info {
+        width: 320px;
+        height: 300px;
+        margin-top: -30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .h0 {
+        font-size: 16pt;
+    }
+
+    .member1_info ,.member2_info ,.member3_info ,.member4_info ,.member5_info ,.member6_info ,.member7_info {
+        width: 320px;
+        height: 300px;
+        margin-top: -30px;
+        position: relative;
+        z-index: 1;
+
+        .h1_1 ,.p1_1 ,.h1_2, .p1_2 {
+            font-size: 8pt;
+        }
+
+        .h2_1 ,.p2_1 ,.h2_2, .p2_2 {
+            font-size: 8pt;
+        }
+
+        .h3_1 ,.p3_1 ,.h3_2, .p3_2 {
+            font-size: 8pt;
+        }
+
+        .h4_1 ,.p4_1 ,.h4_2, .p4_2 {
+            font-size: 8pt;
+        }
+
+        .h5_1 ,.p5_1 ,.h5_2, .p5_2 {
+            font-size: 8pt;
+        }
+
+        .h6_1 ,.p6_1 {
+            font-size: 8pt;
+        }
+
+        .h7_1 ,.p7_1 {
+            font-size: 8pt;
+        }
+
+
+    }
+
+    .member1_info {
+        .h1_1 {
+            margin-right: 20px;
+            margin-top: 100px;
+        }
+    
+        .p1_1 {
+            margin-top: 105px;
+        }
+        
+        .h1_2 {
+            margin-right: 20px;
+            margin-bottom: 120px;
+        }
+    
+        .p1_2 {
+            margin-bottom: 100px;
+        }
+    }
+   
+    .member2_info {
+        .h2_1 {
+            margin-right: 20px;
+            margin-top: 40px;
+        }
+    
+        .p2_1 {
+            margin-top: 80px;
+        }
+        
+        .h2_2 {
+            margin-right: 20px;
+            margin-bottom: 90px;
+        }
+    
+        .p2_2 {
+            margin-bottom: 85px;
+        }
+    }
+  
+    .member3_info {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        .h3_1 {
+            margin-right: 20px;
+            margin-top: 70px;
+        }
+    
+        .p3_1 {
+            margin-top: 90px;
+        }
+        
+        .h3_2 {
+            margin-right: 20px;
+            margin-bottom: 90px;
+        }
+    
+        .p3_2 {
+            margin-bottom: 85px;
+        }
+    }
+   
+    .member4_info {
+        .h4_1 {
+            margin-right: 20px;
+            margin-top: 0px;
+        }
+    
+        .p4_1 {
+            margin-top: 60px;
+        }
+        
+        .h4_2 {
+            margin-right: 20px;
+            margin-bottom: 50px;
+        }
+    
+        .p4_2 {
+            margin-bottom: 40px;
+        }
+    }
+ 
+    .member5_info {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+
+        .h5_1 {
+            margin-right: 20px;
+            margin-top: 60px;
+        }
+    
+        .p5_1 {
+            margin-top: 85px;
+        }
+        
+        .h5_2 {
+            margin-right: 20px;
+            margin-bottom: 50px;
+        }
+    
+        .p5_2 {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .member6_info {
+        .h6_1 {
+            margin-right: 20px;
+            margin-bottom: 95px;
+        }
+    
+        .p6_1 {
+            margin-top: 60px;
+        }
+    }
+    
+    .member7_info {
+        .h7_1 {
+            margin-right: 20px;
+            margin-bottom: 65px;
+        }
+    
+        .p7_1 {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+    

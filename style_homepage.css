@@ -424,7 +424,7 @@ header {
   justify-content: space-between;
   align-items: center; 
   width: 100%;
-  padding: 0 9rem; 
+  padding: 0 3rem; 
   box-sizing: border-box; 
 }
 #hh {
@@ -442,11 +442,17 @@ header {
 }
 #nn a {
   text-decoration: none; 
-  color: #ffffff; /
+  color: #ffffff; 
+  font-family: "Space Mono", monospace;
+  
 }
 #nn a:hover {
   color: #000000;
-  transition: color 0.4s ease-in-out; 
+  font-size: 26pt;
+  transition: 1s;
+}
+#nn p {
+  color: white;
 }
 
 /* =============== Header style End  =======================*/
@@ -530,7 +536,7 @@ footer{
   }
 
 }
-@media (max-width: 1068px) {
+@media (max-width: 1268px) {
   header {
     flex-direction: column; 
     height: auto; 

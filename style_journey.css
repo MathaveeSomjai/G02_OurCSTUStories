@@ -41,7 +41,8 @@ header {
   #nn a {
     text-decoration: none; 
     color: #ffffff; 
-    font-family: "Space Mono", monospace; 
+    font-family: "Space Mono", monospace;
+    
   }
   #nn a:hover {
     color: #000000;
@@ -49,9 +50,7 @@ header {
     transition: 1s;
   }
   #nn p {
-    text-decoration: none; 
-    color: #ffffff; 
-    font-family: "Space Mono", monospace;
+    color: white;
   }
 
 /*==============type writer===============*/
@@ -248,7 +247,7 @@ img {
 
 /*==============responsive==============*/
 /*----- for navigation bar -----*/
-@media (max-width: 1068px) {
+@media (max-width: 1268px) {
     header {
       flex-direction: column; 
       height: auto; 

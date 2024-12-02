@@ -643,7 +643,9 @@ footer{
     font-family: "Space Mono", monospace;
     scroll-snap-align: start; /* Optional: Make each card snap to viewport */
   }
-
+  #nn a:hover {
+    font-size: 13pt;
+  }
   
   
 }

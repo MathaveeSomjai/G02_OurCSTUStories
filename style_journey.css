@@ -41,8 +41,7 @@ header {
   #nn a {
     text-decoration: none; 
     color: #ffffff; 
-    font-family: "Space Mono", monospace;
-    
+    font-family: "Space Mono", monospace; 
   }
   #nn a:hover {
     color: #000000;
@@ -50,7 +49,9 @@ header {
     transition: 1s;
   }
   #nn p {
-    color: white;
+    text-decoration: none; 
+    color: #ffffff; 
+    font-family: "Space Mono", monospace;
   }
 
 /*==============type writer===============*/

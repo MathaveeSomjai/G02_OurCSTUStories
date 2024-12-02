@@ -50,7 +50,9 @@ header {
     transition: 1s;
   }
   #nn p {
-    color: white;
+    text-decoration: none; 
+    color: #ffffff; 
+    font-family: "Space Mono", monospace;
   }
 
 /*==============type writer===============*/
